@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+
+	<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bugatti_logo.svg/1200px-Bugatti_logo.svg.png">
+
+	<style type="">
+		.mid{ margin: 0 auto;
+		width: 30%;
+		display:block; 
+		border: 2px solid purple;
+		padding: 20px;
+		border-radius:20px;}
+
+		body{background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/02-ss300p-3i4-front-1567937037.jpg);
+			background-size: cover;
+			color:white;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+<div class="mid">
+
+	<img style="margin-left: 100px;" width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bugatti_logo.svg/1200px-Bugatti_logo.svg.png">
+
+	<fieldset style="border-radius:20px;">
+		<legend style="text-align:center;">Register here:</legend>
+	
+
+	<h1>Registration Form</h1>
+
+	<form action="https://www.bugatti.com/" target="_blank" method="get">
+
+		<label>First Nmae:</label>
+
+		<input type="text" name="Fname" placeholder="Tony">
+
+		<br><br>
+
+		<label>Last Name:</label>
+		
+		<input type="text" name="Lname" placeholder="Stark">
+
+		<p>
+
+			<label>Male</label>
+
+			<input type="radio" name="gender">
+
+			<label>Female</label>
+			
+			<input type="radio" name="gender">
+
+			<label>Other</label>
+
+			<input type="radio" name="gender">
+		</p>
+
+		<p>
+			<label>Email:</label>
+			<input type="Email" name="Email" placeholder="Tonystark@gmail.com" required>
+		<br><br>
+			<label>Password:</label>
+			<input type="Password" name="pw" required pattern=".{3,10}" title="Password must be between 3 and 10 characters">
+
+		<!-- <label>Date of birth:</label>
+		<input type="Date" name="calendar"> -->
+
+		<p>
+			<label>Date of birth:</label>
+
+	<select style="border-radius:20px;">
+			<option>Date</option>
+			<option>2</option>
+			<option>4</option>
+			<option>6</option>
+			<option>8</option>
+			<option>10</option>	
+	</select>
+
+	<select style="border-radius:20px;">
+			<option>Month</option>
+			<option>2</option>
+			<option>4</option>
+			<option>6</option>
+			<option>8</option>
+			<option>10</option>	
+			<option>12</option>	
+	</select>
+
+
+	<select style="border-radius:20px;">
+			<option>Year</option>
+			<option>2010</option>
+			<option>2012</option>
+			<option>2014</option>
+			<option>2016</option>
+			<option>2018</option>	
+			<option>2020</option>	
+	</select>
+
+		</p>
+		<label>Please upload your documents here:</label>
+		<input type="file" name="files">
+		<br><br>
+
+		<textarea rows="10" cols="40" placeholder="Share you feedback"></textarea>
+        <p>What is your mood</p>
+		<select name="mood">
+			<option> :)  I am happy</option>
+			<option> :|  I am neutral</option>
+			<option> :(  I am sad</option>
+   		</select>
+   		<br><br>
+   		<label>I agree to the terms and conditions:</label>
+   		<input type="checkbox" name="tick" required>
+   		<button style="border-radius:20%; background:red; color:violet; text-transform:uppercase;">Submit</button>
+
+
+	</form>
+	</fieldset>
+</div>
+
+</body>
+</html>
